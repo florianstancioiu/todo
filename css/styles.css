@@ -1,0 +1,94 @@
+:root {
+  --bg-color-1: white;
+  --bg-color-2: #e3e3e3;
+  --color-1: #000;
+  --color-2: #cacaca;
+}
+
+body {
+  margin: 0;
+  color: var(--color-1);
+  font-family: 'Roboto', sans-serif;
+  background-color: var(--bg-color-1);
+}
+
+p {
+  margin: 0;
+}
+
+button {
+  cursor: pointer;
+}
+
+.todo-wrapper {
+  background-color: var(--bg-color-2);
+  width: 600px;
+  margin: 40px auto 0;
+  border-radius: 4px;
+}
+
+.todo-header {
+  border-radius: 10px 10px 0 0;
+  padding: 0 10px;
+  border-bottom: 1px solid var(--color-1);
+  margin-bottom: 10px;
+}
+
+.todo-header h1 {
+  padding: 20px 0 20px;
+  text-align: center;
+}
+
+.todo-input {
+  width: 100%;
+  border-radius: 5px;
+  border: none;
+  margin-bottom: 10px;
+  height: 40px;
+  line-height: 40px;
+  padding: 0 20px;
+}
+
+.todo-add-btn {
+  cursor: pointer;
+  width: 100%;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.todo-item {
+  padding: 0 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid var(--color-2);
+}
+
+.todo-item:last-child {
+  border-bottom: none;
+}
+
+.todo-title {
+  cursor: pointer;
+}
+
+.todo-title-wrapper {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.todo-buttons > button {
+  font-size: 14px;
+}
+
+.todo-item.completed .todo-title {
+  text-decoration: line-through;
+}
+
+.todo-drag-icon {
+  cursor: grab;
+}
