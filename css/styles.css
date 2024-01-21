@@ -1,6 +1,7 @@
 :root {
   --bg-color-1: white;
   --bg-color-2: #e3e3e3;
+  --bg-color-3: #f4efef;
   --color-1: #000;
   --color-2: #cacaca;
 }
@@ -31,7 +32,6 @@ button {
   border-radius: 10px 10px 0 0;
   padding: 0 10px;
   border-bottom: 1px solid var(--color-1);
-  margin-bottom: 10px;
 }
 
 .todo-header h1 {
@@ -58,13 +58,15 @@ button {
 }
 
 .todo-item {
-  padding: 0 10px 20px;
+  padding: 20px 10px 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 20px;
-  margin-bottom: 20px;
   border-bottom: 1px solid var(--color-2);
+}
+
+.todo-item.active {
+  background-color: var(--bg-color-3);
 }
 
 .todo-item:last-child {
@@ -73,6 +75,7 @@ button {
 
 .todo-title {
   cursor: pointer;
+  user-select: none;
 }
 
 .todo-title-wrapper {
