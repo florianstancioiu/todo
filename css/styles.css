@@ -88,6 +88,11 @@ button {
   font-size: 14px;
 }
 
+.todo-item.completed {
+  background-color: var(--bg-color-1);
+  opacity: 0.6;
+}
+
 .todo-item.completed .todo-title {
   text-decoration: line-through;
 }
