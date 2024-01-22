@@ -7,3 +7,8 @@
 5. Edit a todo when pressing the edit button of the todo item
 6. Set the new title for the edited todo when pressing the edit button
 7. Switch the position of the todo items in the DOM using the Drag and Drop API
+
+# Future Tasks
+
+1. Make the app depend on localStorage
+2. Add a dark mode
