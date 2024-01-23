@@ -121,7 +121,15 @@ const dropTodo = (event) => {
   const droppedOnTodo = currentTarget.closest('.todo-item');
   const activeDraggedTodo = document.querySelector('.todo-item.active-drag');
 
-  todoBody.insertBefore(activeDraggedTodo, droppedOnTodo);
+  const indexOfDropped = Array.from(todoBody.childNodes).indexOf(droppedOnTodo);
+  const indexOfActive = Array.from(todoBody.childNodes).indexOf(
+    activeDraggedTodo
+  );
+
+  const reference =
+    indexOfActive < indexOfDropped ? droppedOnTodo.nextSibling : droppedOnTodo;
+
+  todoBody.insertBefore(activeDraggedTodo, reference);
 
   activeDraggedTodo.classList.remove('active-drag');
 };
