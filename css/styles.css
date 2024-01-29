@@ -13,6 +13,21 @@ body {
   background-color: var(--bg-color-1);
 }
 
+body.dark-mode {
+  --bg-color-1: rgb(180, 138, 46);
+  --bg-color-2: rgb(51, 51, 51);
+  --color-1: white;
+}
+
+.dark-mode .todo-editable {
+  color: var(--bg-color-2);
+}
+
+.toggle-dark-mode {
+  margin: 40px auto 0;
+  display: block;
+}
+
 p {
   margin: 0;
 }
@@ -24,7 +39,7 @@ button {
 .todo-wrapper {
   background-color: var(--bg-color-2);
   width: 600px;
-  margin: 40px auto 0;
+  margin: 0 auto 0;
   border-radius: 4px;
 }
 
